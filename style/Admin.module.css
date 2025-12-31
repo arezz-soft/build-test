@@ -1,0 +1,381 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.loginContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loginBox {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loginBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.loginBox h1 {
+  margin: 0 0 2rem 0;
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: linear-gradient(45deg, #5500f3, #c800ff , #6200ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.loginBox::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0.7;
+  filter: blur(15px);
+}
+
+.dashboardContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: #6203ce;
+  transition: color 0.2s;
+  
+}
+.header:hover {
+  color: #8f0186; 
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.inputGroup input,
+.inputGroup select {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 2px solid rgba(0, 112, 243, 0.1);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  color: #1a1a1a;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 4px rgba(0, 112, 243, 0.1);
+  background: #ffffff;
+}
+
+.inputGroup input::placeholder {
+  color: #999;
+}
+
+.loginButton,
+.submitButton,
+.logoutButton {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(45deg, #5500f3, #c800ff , #6200ff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loginButton:hover,
+.submitButton:hover {
+  background: linear-gradient(45deg, #2f00ff, #5500f3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 112, 243, 0.3);
+}
+
+.loginButton:active,
+.submitButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(0, 112, 243, 0.2);
+}
+
+.logoutButton {
+  width: auto;
+  padding: 0.5rem 1rem;
+  background-color: #ff4444;
+}
+
+.loginButton:hover,
+.submitButton:hover {
+  background-color: #0051b3;
+}
+
+.logoutButton:hover {
+  background-color: #cc0000;
+}
+
+.error {
+  color: #ff4444;
+  margin: 1rem 0;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 68, 68, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 68, 68, 0.2);
+  font-size: 0.9rem;
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.uploadSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagePreview {
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.imagePreview img {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.tabs {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.tabButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.tabButton.active {
+  background-color: #5b03de;
+  color: white;
+}
+
+.searchBar {
+  position: relative;
+  margin-bottom: 2rem;
+  
+}
+
+.searchBar input {
+  width: 50%;
+  margin-left: 300px;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+.searchBar input:focus {
+  outline: none;
+  border-color: #6200ff;
+  box-shadow: 0 0 0 4px rgba(0, 112, 243, 0.1);
+}
+.searchIcon {
+  position: absolute;
+  left: 820px;
+  top: 50%;
+  font-size: 30px;
+  transform: translateY(-50%);
+  color: #6b00b3;
+}
+
+.productsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.productItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.productInfo {
+  flex: 1;
+}
+
+.productInfo h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.productInfo p {
+  margin: 0;
+  color: #666;
+}
+
+.productActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton,
+.deleteButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.editButton {
+  background-color: #0070f3;
+  color: white;
+}
+
+.deleteButton {
+  background-color: #ff4444;
+  color: white;
+}
+@media (max-width: 768px) {
+  .productItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .productImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .productActions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .editButton,
+  .deleteButton {
+    margin-top: 1rem;
+    flex: 1;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .searchBar input {
+    width: 100%;
+    margin-left: 0;
+  }
+  .searchIcon {
+    left: 300px;
+  }
+}
+
+.cancelButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.cancelButton:hover {
+  background-color: #555;
+}
