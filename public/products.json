@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "NZXT H6",
+    "category": "Computers",
+    "price": "995",
+    "image": "/images/NZXT H6 Flow RGB White.png"
+  },
+ {
+    "id": 2,
+    "name": "Galleria Case",
+    "category": "Computers",
+    "price": "1070",
+    "image": "/images/Galleria Case.png"
+  },
+ {
+    "id": 3,
+    "name": "Legion Tower 7i Gen 8 ",
+    "category": "Computers",
+    "price": "750",
+    "image": "/images/Legion Tower 7i Gen 8 .png"
+  },
+ {
+    "id": 4,
+    "name": "NZXT H5 ELITE ALL WHITE",
+    "category": "Computers",
+    "price": "645",
+    "image": "/images/NZXT H5 ELITE ALL WHITE.png"
+  },
+  {
+    "id": 5,
+    "name": "Lenovo LOQ",
+    "category": "Laptops",
+    "price": "1050",
+    "image": "/images/Lenovo LOQ.png"
+  },
+ {
+    "id": 6,
+    "name": "Asus TUF",
+    "category": "Laptops",
+    "price": "900",
+    "image": "/images/Asus TUF.png"
+  },
+ {
+    "id": 7,
+    "name": "Lenovo ThinkPad",
+    "category": "Laptops",
+    "price": "800",
+    "image": "/images/Lenovo ThinkPad.png"
+  },
+ {
+    "id": 8,
+    "name": "HP Victus",
+    "category": "Laptops",
+    "price": "750",
+    "image": "/images/HP Victus.png"
+  },
+  {
+    "id": 9,
+    "name": "Monitor Odyssey G9 49inch OLED",
+    "category": "Supplies",
+    "price": "950",
+    "image": "/images/Monitor Odyssey G9 49inch OLED.png"
+  },
+  {
+    "id": 10,
+    "name": "Monitor Odyssey G5 32inch",
+    "category": "Supplies",
+    "price": "225",
+    "image": "/images/monitor.png"
+  },
+  {
+    "id": 11,
+    "name": "keybord Kumara Blue Switche",
+    "category": "Supplies",
+    "price": "34",
+    "image": "/images/Keyboard.png"
+  },
+ {
+    "id": 12,
+    "name": "keybord DITI Elete",
+    "category": "Supplies",
+    "price": "25",
+    "image": "/images/keybord DITI Elete.png"
+  },
+ {
+    "id": 13,
+    "name": "Mouse HANA RGB",
+    "category": "Supplies",
+    "price": "22",
+    "image": "/images/Mouse HANA.png"
+  },
+ {
+    "id": 14,
+    "name": "Mouse Ranger RGB",
+    "category": "Supplies",
+    "price": "21",
+    "image": "/images/Ranger.png"
+  },
+ {
+    "id": 15,
+    "name": "Headset Alpha Gamer",
+    "category": "Supplies",
+    "price": "35",
+    "image": "/images/Headset Alpha.png"
+  },
+ {
+    "id": 16,
+    "name": "Headset Cloud Revolver",
+    "category": "Supplies",
+    "price": "48",
+    "image": "/images/Headset Cloud Revolver.png"
+  }
+]
