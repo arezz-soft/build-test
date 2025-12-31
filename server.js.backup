@@ -1,0 +1,70 @@
+const express = require('express');
+
+const server = express();
+server.use(express.json());
+
+// Simple CORS for local dev: allow requests from the frontend at localhost:3000
+server.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+  // allow credentials if needed
+  res.header('Access-Control-Allow-Credentials', 'true');
+  if (req.method === 'OPTIONS') return res.sendStatus(200);
+  next();
+});
+
+// In-memory carts store keyed by cartId. For production use a database or Redis.
+const carts = {};
+const makeId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+
+// Add item to cart (cartId in body or created)
+server.post('/api/cart/add', (req, res) => {
+  const { cartId, ...item } = req.body || {};
+  if (!item.id) return res.status(400).json({ error: 'Missing item id' });
+
+  const id = cartId && carts[cartId] ? cartId : makeId();
+  if (!carts[id]) carts[id] = [];
+  const existing = carts[id].find(i => i.id === item.id);
+  if (existing) {
+    existing.quantity = (existing.quantity || 0) + (item.quantity || 1);
+  } else {
+    carts[id].push({ ...item, quantity: item.quantity || 1 });
+  }
+  res.json({ cartId: id, cart: carts[id] });
+});
+
+// Get cart
+server.get('/api/cart', (req, res) => {
+  const cartId = req.query.cartId;
+  res.json({ cart: (cartId && carts[cartId]) || [] });
+});
+
+// Update quantity
+server.post('/api/cart/update', (req, res) => {
+  const { cartId, id, quantity } = req.body || {};
+  if (!cartId) return res.status(400).json({ error: 'Missing cartId' });
+  if (!id) return res.status(400).json({ error: 'Missing id' });
+  if (!carts[cartId]) carts[cartId] = [];
+  if (quantity < 1) {
+    carts[cartId] = carts[cartId].filter(i => i.id !== id);
+  } else {
+    carts[cartId] = carts[cartId].map(i => i.id === id ? { ...i, quantity } : i);
+  }
+  res.json({ cart: carts[cartId] });
+});
+
+// Clear cart
+server.post('/api/cart/clear', (req, res) => {
+  const { cartId } = req.body || {};
+  if (!cartId) return res.status(400).json({ error: 'Missing cartId' });
+  carts[cartId] = [];
+  res.json({ ok: true });
+});
+
+const port = parseInt(process.env.PORT || '5000', 10);
+server.listen(port, err => {
+  if (err) throw err;
+  console.log(`> API server ready on http://localhost:${port}`);
+});
+
