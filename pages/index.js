@@ -110,14 +110,26 @@ export default function Home() {
     return () => { if (timer) clearTimeout(timer); };
   }, [fullHeroText]);
 
-  return (
+return (
     <div className="page-container">
       <Head>
         <title>Build~Computers </title>
+        <link rel="icon" href="/icons/icon-16.png" sizes="16x16" />
+        <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
+        <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
+        <link rel="icon" href="/icons/icon-64.png" sizes="64x64" />
+        <link rel="icon" href="/icons/icon-96.png" sizes="96x96" />
+        <link rel="icon" href="/icons/icon-180.png" sizes="180x180" />
+        <link rel="icon" href="/icons/icon-192.png" sizes="192x192" />
+        <link rel="icon" href="/icons/icon-512.png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/icons/icon-180.png" />
+        <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
       </Head>
 
       <header className="main-header">
-        <div className="header-logo" onClick={() => router.push('/')}>Build Computers</div>
+        <div className="header-logo" onClick={() => router.push('/')}>
+          <span>Build Computers</span>
+        </div>
         <button className="search-toggle mobile-only" aria-label="Open search" onClick={() => { setSearchOpen(v => !v); setTimeout(() => searchInputRef.current?.focus(), 60); }}>🔍</button>
         <div className={`search-container ${searchOpen ? 'expanded' : ''}`}>
           <form className={`search-form ${searchOpen ? 'expanded' : ''}`} onSubmit={handleSearch}>
