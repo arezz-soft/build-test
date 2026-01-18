@@ -422,7 +422,97 @@ body {
   }
 
 }
+@media (max-width: 932px) {
+  .hero {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  .main-header {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
 
+  .header-logo {
+    font-size: 1.4rem;
+    margin-left: 30px;
+  }
+  .search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .search-form {
+    width: 60%;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-right: 150px;
+    margin-left: -120px; 
+    position: relative;
+  }
+
+  .hamburger-toggle {
+    display: flex;
+    order: 3;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: rgba(10, 1, 30, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 0;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+  }
+
+  .nav-menu.active {
+    max-height: 300px;
+    opacity: 1;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(168, 85, 247, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-menu a {
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-menu a::after {
+    display: none;
+  }
+
+  .nav-menu a:hover {
+    background: rgba(168, 85, 247, 0.1);
+  }
+
+  .basket-link {
+    margin: 0.5rem 2rem;
+    width: auto !important;
+    display: inline-flex !important;
+    justify-content: center;
+  }
+
+}
 @media (max-width: 480px) {
   .header-logo {
     font-size: 1.6rem;
@@ -911,9 +1001,12 @@ footer {
 
 /* smaller screens tweak */
 @media (max-width: 768px) {
-  .hero { padding: 60px 12px; }
+  .hero { padding: 60px 12px; height: 60vh;}
   .hero h1 { font-size: 1.8rem; }
   .header-logo { margin-left: 12px; }
+}
+@media (max-width: 932px) {
+  .hero { padding: 60px 12px; height: 82vh;}
 }
 
 @media (max-width: 480px) {
