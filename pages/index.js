@@ -113,19 +113,25 @@ export default function Home() {
 return (
     <div className="page-container">
       <Head>
-        <title>Build~Computers </title>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
-        <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
-        <link rel="icon" href="/icons/icon-64.png" sizes="64x64" />
-        <link rel="icon" href="/icons/icon-96.png" sizes="96x96" />
-        <link rel="icon" href="/icons/icon-180.png" sizes="180x180" />
-        <link rel="icon" href="/icons/icon-192.png" sizes="192x192" />
-        <link rel="icon" href="/icons/icon-512.png" sizes="512x512" />
-        <link rel="apple-touch-icon" href="/icons/icon-180.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
+        <title>Build~Computers - Build Your Dream PC</title>
+        <link rel="icon" href="https://build-computer.vercel.app/favicon.ico" sizes="any" />
+        <link rel="icon" href="https://build-computer.vercel.app/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-16.png" sizes="16x16" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-24.png" sizes="24x24" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-32.png" sizes="32x32" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-64.png" sizes="64x64" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-128.png" sizes="128x128" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-180.png" sizes="180x180" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-192.png" sizes="192x192" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-256.png" sizes="256x256" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-512.png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="https://build-computer.vercel.app/icons/icon-180.png" />
+        <meta name="msapplication-TileColor" content="#0a0a0c" />
+        <meta name="msapplication-TileImage" content="https://build-computer.vercel.app/icons/icon-512.png" />
+        <meta name="theme-color" content="#0a0a0c" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="https://build-computer.vercel.app/manifest.json" />
+        <meta name="description" content="Choose the best components and create your perfect setup. Premium computer builds, laptops, and supplies." />
 
         {/* Open Graph Meta Tags for Social Previews */}
         <meta property="og:site_name" content="Build Computers" />
@@ -261,6 +267,7 @@ return (
     </div>
   );
 }
+
 
 
 
