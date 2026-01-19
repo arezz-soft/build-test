@@ -1,0 +1,61 @@
+{
+    "name": "Build Computers",
+    "short_name": "Build~Com",
+    "description": "Choose the best components and create your perfect setup.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0c",
+    "theme_color": "#0a0a0c",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/icons/icon-16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-24.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ]
+}
