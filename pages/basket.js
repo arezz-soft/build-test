@@ -157,6 +157,7 @@ export default function Basket() {
   if (cart.length === 0) {
     return (
       <>
+        <Head>
           <title>My Basket - Build Computers</title>
           <link rel="icon" href="https://build-computer.vercel.app/favicon.ico" sizes="any" />
           <link rel="icon" href="https://build-computer.vercel.app/favicon.svg" type="image/svg+xml" />
@@ -342,6 +343,7 @@ export default function Basket() {
     </>
   );
 }
+
 
 
 
