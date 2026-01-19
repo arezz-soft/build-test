@@ -232,16 +232,15 @@ export default function AdminDashboard() {
         <link rel="manifest" href="https://build-computer.vercel.app/manifest.json" />
         <meta name="description" content="Admin Dashboard for Build Computers - Manage your inventory and orders." />
 
-        <meta property="og:site_name" content="Build Computers" />
-        <meta property="og:title" content="Admin Dashboard - Build Computers" />
-        <meta property="og:description" content="Manage your premium computer builds and components." />
-        <meta property="og:image" content="https://build-computer.vercel.app/icons/og-image.png" />
-        <meta property="og:image:secure_url" content="https://build-computer.vercel.app/icons/og-image.png" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1024" />
-        <meta property="og:image:height" content="1024" />
-        <meta property="og:url" content="https://build-computer.vercel.app/admin/dashboard" />
-        <meta property="og:type" content="website" />
+        <meta name="og:site_name" content="Build Computers" />
+        <meta name="og:title" content="Admin Dashboard - Build Computers" />
+        <meta name="og:description" content="Manage your premium computer builds and components." />
+        <meta name="og:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+        <meta name="og:image:type" content="image/png" />
+        <meta name="og:image:width" content="1024" />
+        <meta name="og:image:height" content="1024" />
+        <meta name="og:url" content="https://build-computer.vercel.app/admin/dashboard" />
+        <meta name="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Admin Dashboard - Build Computers" />
         <meta name="twitter:description" content="Admin Dashboard for Build Computers" />
