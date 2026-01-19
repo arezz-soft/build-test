@@ -134,26 +134,27 @@ return (
 
         {/* Open Graph Meta Tags for Social Previews */}
         <meta property="og:site_name" content="Build Computers" />
-        <meta property="og:title" content="Build~Computers - Build Your Dream PC" />
+        <meta property="og:title" content="Build Computers - Build Your Dream PC" />
         <meta property="og:description" content="Choose the best components and create your perfect setup. Premium computer builds, laptops, and supplies." />
         <meta property="og:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+        <meta property="og:image:secure_url" content="https://build-computer.vercel.app/icons/og-image.png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:alt" content="Build Computers Premium Logo" />
-        <meta property="og:url" content="https://build-computer.vercel.app" />
+        <meta property="og:url" content="https://build-computer.vercel.app/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Build~Computers - Build Your Dream PC" />
+        <meta name="twitter:title" content="Build Computers - Build Your Dream PC" />
         <meta name="twitter:description" content="Choose the best components and create your perfect setup." />
         <meta name="twitter:image" content="https://build-computer.vercel.app/icons/og-image.png" />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="1024" />
         <meta name="twitter:image:type" content="image/png" />
         <meta name="twitter:image:alt" content="Build Computers Premium Logo" />
-        <meta name="twitter:url" content="https://build-computer.vercel.app" />
+        <meta name="twitter:url" content="https://build-computer.vercel.app/" />
         <meta name="twitter:type" content="website" />
       </Head>
       <header className="main-header">
@@ -266,6 +267,7 @@ return (
     </div>
   );
 }
+
 
 
 
