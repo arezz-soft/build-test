@@ -210,7 +210,6 @@ export default function AdminDashboard() {
   };
 
   return (
-
     <div className={styles.dashboardContainer}>
       <Head>
         <title>Admin Dashboard - Build Computers</title>
