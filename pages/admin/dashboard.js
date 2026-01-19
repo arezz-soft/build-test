@@ -231,7 +231,6 @@ export default function AdminDashboard() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="manifest" href="https://build-computer.vercel.app/manifest.json" />
         <meta name="description" content="Admin Dashboard for Build Computers - Manage your inventory and orders." />
-
         <meta property="og:site_name" content="Build Computers" />
         <meta property="og:title" content="Admin Dashboard - Build Computers" />
         <meta property="og:description" content="Manage your premium computer builds and components." />
