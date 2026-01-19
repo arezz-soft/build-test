@@ -159,9 +159,8 @@ export default function Basket() {
       <>
         <Head>
           <title>My Basket - Build Computers</title>
-          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-          <link rel="icon" href="/icons/icon-16.png" sizes="16x16" />
-          <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
           <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
           <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
           <link rel="icon" href="/icons/icon-48.png" sizes="48x48" />
@@ -194,9 +193,8 @@ export default function Basket() {
     <>
       <Head>
         <title>My Basket - Build Computers</title>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/icons/icon-16.png" sizes="16x16" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
         <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
         <link rel="icon" href="/icons/icon-48.png" sizes="48x48" />
@@ -298,5 +296,6 @@ export default function Basket() {
     </>
   );
 }
+
 
 
