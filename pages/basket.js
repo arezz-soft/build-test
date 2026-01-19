@@ -182,6 +182,20 @@ export default function Basket() {
           <meta property="og:image:type" content="image/png" />
           <meta property="og:url" content="https://build-computer.vercel.app/basket" />
           <meta property="og:type" content="website" />
+
+          {/* Twitter Meta Tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@buildcomputer" />
+          <meta name="twitter:title" content="My Basket - Build Computers" />
+          <meta name="twitter:description" content="View your selected computer components and proceed to checkout." />
+          <meta name="twitter:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+          <meta name="twitter:image:width" content="1024" />
+          <meta name="twitter:image:height" content="1024" />
+          <meta name="twitter:image:type" content="image/png" />
+          <meta name="twitter:image:alt" content="Build Computers Premium Logo" />
+          <meta name="twitter:url" content="https://build-computer.vercel.app/basket" />
+          <meta name="twitter:type" content="website" />
+
         </Head>
         <BasketHeader />
         <div className="empty-cart">
@@ -210,6 +224,7 @@ export default function Basket() {
         <link rel="manifest" href="/manifest.json" />
         <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
 
+
         {/* Open Graph Meta Tags for Social Previews */}
         <meta property="og:site_name" content="Build Computers" />
         <meta property="og:title" content="My Basket - Build Computers" />
@@ -220,6 +235,20 @@ export default function Basket() {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:url" content="https://build-computer.vercel.app/basket" />
         <meta property="og:type" content="website" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@buildcomputer" />
+        <meta name="twitter:title" content="My Basket - Build Computers" />
+        <meta name="twitter:description" content="View your selected computer components and proceed to checkout." />
+        <meta name="twitter:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+        <meta name="twitter:image:width" content="1024" />
+        <meta name="twitter:image:height" content="1024" />
+        <meta name="twitter:image:type" content="image/png" />
+        <meta name="twitter:image:alt" content="Build Computers Premium Logo" />
+        <meta name="twitter:url" content="https://build-computer.vercel.app/basket" />
+        <meta name="twitter:type" content="website" />
+
       </Head>
       <BasketHeader />
       <main className="basket-page">
@@ -305,6 +334,7 @@ export default function Basket() {
     </>
   );
 }
+
 
 
 
