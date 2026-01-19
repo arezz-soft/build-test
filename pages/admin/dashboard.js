@@ -212,9 +212,46 @@ export default function AdminDashboard() {
   return (
 
     <div className={styles.dashboardContainer}>
-          <Head>
+      <Head>
       <title>Admin Dashboard</title>
-    </Head>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      <link rel="icon" href="/icons/icon-16.png" sizes="16x16" />
+      <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
+      <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
+      <link rel="icon" href="/icons/icon-64.png" sizes="64x64" />
+      <link rel="icon" href="/icons/icon-128.png" sizes="128x128" />
+      <link rel="icon" href="/icons/icon-180.png" sizes="180x180" />
+      <link rel="icon" href="/icons/icon-256.png" sizes="256x256" />
+      <link rel="icon" href="/icons/icon-512.png" sizes="512x512" />
+      <link rel="apple-touch-icon" href="/icons/icon-180.png" />
+      <meta name="msapplication-TileColor" content="#ffffff" />
+      <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
+      <meta name="theme-color" content="#ffffff" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="manifest" href="/manifest.json" />
+      <meta name="description" content="Admin Dashboard for Build~Com" />
+      <meta name="keywords" content="Admin Dashboard, Build~Com" />
+      <meta name="author" content="Build~Com" />
+      <meta name="og:title" content="Admin Dashboard" />
+      <meta name="og:description" content="Admin Dashboard for Build~Com" />
+      <meta name="og:image" content="/icons/og-image.png" />
+      <meta name="og:image:type" content="image/png" />
+      <meta name="og:image:width" content="1024" />
+      <meta name="og:image:height" content="1024" />
+      <meta name="og:url" content="https://build-com.vercel.app/admin/dashboard" />
+      <meta name="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Admin Dashboard" />
+      <meta name="twitter:description" content="Admin Dashboard for Build~Com" />
+      <meta name="twitter:image" content="/icons/og-image.png" />
+      <meta name="twitter:image:type" content="image/png" />
+      <meta name="twitter:image:width" content="1024" />
+      <meta name="twitter:image:height" content="1024" />
+      <meta name="twitter:url" content="https://build-com.vercel.app/admin/dashboard" />
+      <meta name="twitter:site" content="@buildcom" />
+      <meta name="twitter:creator" content="@buildcom" />
+      </Head>
       <div className={styles.header}>
         <h1>Admin Dashboard</h1>
         <button onClick={handleLogout} className={styles.logoutButton}>
