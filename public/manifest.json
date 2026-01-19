@@ -61,6 +61,12 @@
             "src": "/icons/icon-180.png",
             "sizes": "180x180",
             "type": "image/png"
+        },
+        {
+            "src": "/icons/og-image.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
         }
     ]
 }
+
