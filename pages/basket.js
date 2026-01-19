@@ -173,9 +173,13 @@ export default function Basket() {
           <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
 
           {/* Open Graph Meta Tags for Social Previews */}
+          <meta property="og:site_name" content="Build Computers" />
           <meta property="og:title" content="My Basket - Build Computers" />
           <meta property="og:description" content="View your selected computer components and proceed to checkout." />
-          <meta property="og:image" content="https://build-computer.vercel.app/icons/icon-512.png" />
+          <meta property="og:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+          <meta property="og:image:width" content="1024" />
+          <meta property="og:image:height" content="1024" />
+          <meta property="og:image:type" content="image/png" />
           <meta property="og:url" content="https://build-computer.vercel.app/basket" />
           <meta property="og:type" content="website" />
         </Head>
@@ -207,9 +211,14 @@ export default function Basket() {
         <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
 
         {/* Open Graph Meta Tags for Social Previews */}
+        <meta property="og:site_name" content="Build Computers" />
         <meta property="og:title" content="My Basket - Build Computers" />
         <meta property="og:description" content="View your selected computer components and proceed to checkout." />
-        <meta property="og:image" content="https://build-computer.vercel.app/icons/icon-512.png" />
+        <meta property="og:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:url" content="https://build-computer.vercel.app/basket" />
         <meta property="og:type" content="website" />
       </Head>
       <BasketHeader />
@@ -296,6 +305,7 @@ export default function Basket() {
     </>
   );
 }
+
 
 
 
