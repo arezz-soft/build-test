@@ -13,6 +13,11 @@
             "type": "image/x-icon"
         },
         {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
             "src": "/icons/icon-16.png",
             "sizes": "16x16",
             "type": "image/png"
