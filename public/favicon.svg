@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9C27FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#9C27FF" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <rect width="512" height="512" fill="#0a0a0c" rx="80" />
+
+  <!-- Outer glow -->
+  <g filter="url(#shadow)">
+    <!-- Main B shape -->
+    <path d="M 140 120 L 280 120 Q 360 120 360 180 Q 360 220 320 240 Q 370 260 370 320 Q 370 390 280 390 L 140 390 L 140 120 Z M 200 170 L 200 220 L 270 220 Q 300 220 300 195 Q 300 170 270 170 L 200 170 Z M 200 270 L 200 340 L 280 340 Q 310 340 310 305 Q 310 270 280 270 L 200 270 Z" 
+          fill="url(#grad1)" 
+          stroke="url(#grad1)" 
+          stroke-width="8"
+          filter="url(#glow)"/>
+    
+    <!-- 3D depth effect - left edge highlight -->
+    <path d="M 140 120 L 160 140 L 160 370 L 140 390 Z" 
+          fill="#00D9FF" 
+          opacity="0.3"/>
+    
+    <!-- 3D depth effect - top edge highlight -->
+    <path d="M 140 120 L 160 140 L 280 140 L 280 120 Z" 
+          fill="#00D9FF" 
+          opacity="0.4"/>
+    
+    <!-- Inner shadows for depth -->
+    <path d="M 200 170 L 220 190 L 220 220 L 270 220 Q 285 220 285 205 Q 285 190 270 190 L 220 190 Z" 
+          fill="#1a0033" 
+          opacity="0.5"/>
+    
+    <path d="M 200 270 L 220 290 L 220 340 L 280 340 Q 295 340 295 315 Q 295 290 280 290 L 220 290 Z" 
+          fill="#1a0033" 
+          opacity="0.5"/>
+  </g>
+</svg>
