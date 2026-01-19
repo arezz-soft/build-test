@@ -114,9 +114,8 @@ return (
     <div className="page-container">
       <Head>
         <title>Build~Computers </title>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/icons/icon-16.png" sizes="16x16" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
         <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
         <link rel="icon" href="/icons/icon-64.png" sizes="64x64" />
@@ -141,8 +140,6 @@ return (
         <meta name="twitter:description" content="Choose the best components and create your perfect setup." />
         <meta name="twitter:image" content="https://build-computer.vercel.app/icons/icon-512.png" />
       </Head>
-
-
       <header className="main-header">
         <div className="header-logo" onClick={() => router.push('/')}>
           <span>Build Computers</span>
@@ -253,5 +250,6 @@ return (
     </div>
   );
 }
+
 
 
