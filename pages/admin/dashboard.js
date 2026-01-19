@@ -23,7 +23,7 @@ export default function AdminDashboard() {
   const [allProducts, setAllProducts] = useState([]);
 
   // Load products from localStorage on initial render
-
+  
   useEffect(() => {
     const isAdmin = localStorage.getItem('isAdmin');
     if (!isAdmin) {
@@ -124,7 +124,7 @@ export default function AdminDashboard() {
     setActiveTab('add');
   };
 
-  const filteredProducts = allProducts.filter(p =>
+  const filteredProducts = allProducts.filter(p => 
     p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     p.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
     p.price.includes(searchTerm)
@@ -132,14 +132,14 @@ export default function AdminDashboard() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    
     const handleImageAndSave = async (base64Image) => {
       try {
         // Validate image size
         if (base64Image) {
           const sizeInBytes = Math.ceil((base64Image.length * 3) / 4);
           const sizeInMB = sizeInBytes / (1024 * 1024);
-
+          
           if (sizeInMB > 5) { // Limit to 5MB
             alert('Image size too large. Please choose an image under 5MB.');
             return;
@@ -158,7 +158,7 @@ export default function AdminDashboard() {
 
         let updatedProducts;
         if (isEditMode) {
-          updatedProducts = allProducts.map(p =>
+          updatedProducts = allProducts.map(p => 
             p.id === product.id ? productData : p
           );
         } else {
@@ -182,7 +182,7 @@ export default function AdminDashboard() {
         // Clear file input
         const fileInput = document.getElementById('image');
         if (fileInput) fileInput.value = '';
-
+        
         alert(`Product ${isEditMode ? 'updated' : 'added'} successfully!`);
 
       } catch (error) {
@@ -210,6 +210,7 @@ export default function AdminDashboard() {
   };
 
   return (
+
     <div className={styles.dashboardContainer}>
       <Head>
         <title>Admin Dashboard - Build Computers</title>
@@ -230,16 +231,15 @@ export default function AdminDashboard() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="manifest" href="https://build-computer.vercel.app/manifest.json" />
         <meta name="description" content="Admin Dashboard for Build Computers - Manage your inventory and orders." />
-        <meta property="og:site_name" content="Build Computers" />
-        <meta property="og:title" content="Admin Dashboard - Build Computers" />
-        <meta property="og:description" content="Manage your premium computer builds and components." />
-        <meta property="og:image" content="https://build-computer.vercel.app/icons/og-image.png" />
-        <meta property="og:image:secure_url" content="https://build-computer.vercel.app/icons/og-image.png" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1024" />
-        <meta property="og:image:height" content="1024" />
-        <meta property="og:url" content="https://build-computer.vercel.app/admin/dashboard" />
-        <meta property="og:type" content="website" />
+        <meta name="og:site_name" content="Build Computers" />
+        <meta name="og:title" content="Admin Dashboard - Build Computers" />
+        <meta name="og:description" content="Manage your premium computer builds and components." />
+        <meta name="og:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+        <meta name="og:image:type" content="image/png" />
+        <meta name="og:image:width" content="1024" />
+        <meta name="og:image:height" content="1024" />
+        <meta name="og:url" content="https://build-computer.vercel.app/admin/dashboard" />
+        <meta name="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Admin Dashboard - Build Computers" />
         <meta name="twitter:description" content="Admin Dashboard for Build Computers" />
@@ -253,13 +253,13 @@ export default function AdminDashboard() {
       </div>
 
       <div className={styles.tabs}>
-        <button
+        <button 
           className={`${styles.tabButton} ${activeTab === 'add' ? styles.active : ''}`}
           onClick={() => setActiveTab('add')}
         >
           {isEditMode ? 'Edit Product' : 'Add New Product'}
         </button>
-        <button
+        <button 
           className={`${styles.tabButton} ${activeTab === 'manage' ? styles.active : ''}`}
           onClick={() => setActiveTab('manage')}
         >
@@ -271,86 +271,86 @@ export default function AdminDashboard() {
         <div className={styles.uploadSection}>
           <h2>{isEditMode ? 'Edit Product' : 'Add New Product'}</h2>
           <form onSubmit={handleSubmit}>
-            <div className={styles.inputGroup}>
-              <label htmlFor="name">Product Name</label>
-              <input
-                type="text"
-                id="name"
-                value={product.name}
-                onChange={(e) => setProduct({ ...product, name: e.target.value })}
-                required
-              />
-            </div>
+          <div className={styles.inputGroup}>
+            <label htmlFor="name">Product Name</label>
+            <input
+              type="text"
+              id="name"
+              value={product.name}
+              onChange={(e) => setProduct({...product, name: e.target.value})}
+              required
+            />
+          </div>
 
-            <div className={styles.inputGroup}>
-              <label htmlFor="price">Price ($)</label>
-              <input
-                type="number"
-                id="price"
-                value={product.price}
-                onChange={(e) => setProduct({ ...product, price: e.target.value })}
-                required
-              />
-            </div>
+          <div className={styles.inputGroup}>
+            <label htmlFor="price">Price ($)</label>
+            <input
+              type="number"
+              id="price"
+              value={product.price}
+              onChange={(e) => setProduct({...product, price: e.target.value})}
+              required
+            />
+          </div>
 
-            <div className={styles.inputGroup}>
-              <label htmlFor="image">Product Image</label>
-              <input
-                type="file"
-                id="image"
-                accept="image/*"
-                onChange={handleImageChange}
-                required={!isEditMode}
-              />
-              {product.imagePreview && (
-                <div className={styles.imagePreview}>
-                  <img
-                    src={product.imagePreview}
-                    alt="Preview"
-                    style={{ maxWidth: '200px', maxHeight: '200px', objectFit: "contain" }}
-                  />
-                </div>
-              )}
-            </div>
-
-            <div className={styles.inputGroup}>
-              <label htmlFor="category">Category</label>
-              <select
-                id="category"
-                value={product.category}
-                onChange={(e) => setProduct({ ...product, category: e.target.value })}
-                required
-              >
-                <option value="computers">Computers</option>
-                <option value="laptops">Laptops</option>
-                <option value="supplies">Supplies</option>
-              </select>
-            </div>
-
-            <button type="submit" className={styles.submitButton}>
-              {isEditMode ? 'Update Product' : 'Add Product'}
-            </button>
-            {isEditMode && (
-              <button
-                type="button"
-                className={styles.cancelButton}
-                onClick={() => {
-                  setIsEditMode(false);
-                  setProduct({
-                    name: '',
-                    price: '',
-                    image: null,
-                    imagePreview: '',
-                    category: 'computers',
-                    id: null
-                  });
-                }}
-              >
-                Cancel Edit
-              </button>
+          <div className={styles.inputGroup}>
+            <label htmlFor="image">Product Image</label>
+            <input
+              type="file"
+              id="image"
+              accept="image/*"
+              onChange={handleImageChange}
+              required={!isEditMode}
+            />
+            {product.imagePreview && (
+              <div className={styles.imagePreview}>
+                <img
+                  src={product.imagePreview}
+                  alt="Preview"
+                  style={{ maxWidth: '200px', maxHeight: '200px', objectFit: "contain" }}
+                />
+              </div>
             )}
-          </form>
-        </div>
+          </div>
+
+          <div className={styles.inputGroup}>
+            <label htmlFor="category">Category</label>
+            <select
+              id="category"
+              value={product.category}
+              onChange={(e) => setProduct({...product, category: e.target.value})}
+              required
+            >
+              <option value="computers">Computers</option>
+              <option value="laptops">Laptops</option>
+              <option value="supplies">Supplies</option>
+            </select>
+          </div>
+
+          <button type="submit" className={styles.submitButton}>
+            {isEditMode ? 'Update Product' : 'Add Product'}
+          </button>
+          {isEditMode && (
+            <button 
+              type="button" 
+              className={styles.cancelButton}
+              onClick={() => {
+                setIsEditMode(false);
+                setProduct({
+                  name: '',
+                  price: '',
+                  image: null,
+                  imagePreview: '',
+                  category: 'computers',
+                  id: null
+                });
+              }}
+            >
+              Cancel Edit
+            </button>
+          )}
+        </form>
+      </div>
       ) : (
         <div className={styles.manageSection}>
           <div className={styles.searchBar}>
@@ -389,13 +389,13 @@ export default function AdminDashboard() {
                   <p>Category: {p.category}</p>
                 </div>
                 <div className={styles.productActions}>
-                  <button
+                  <button 
                     className={styles.editButton}
                     onClick={() => handleEdit(p)}
                   >
                     <FiEdit2 /> Edit
                   </button>
-                  <button
+                  <button 
                     className={styles.deleteButton}
                     onClick={() => handleDelete(p.id)}
                   >
