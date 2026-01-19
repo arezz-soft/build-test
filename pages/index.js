@@ -122,7 +122,6 @@ return (
         <link rel="icon" href="https://build-computer.vercel.app/icons/icon-64.png" sizes="64x64" />
         <link rel="icon" href="https://build-computer.vercel.app/icons/icon-128.png" sizes="128x128" />
         <link rel="icon" href="https://build-computer.vercel.app/icons/icon-180.png" sizes="180x180" />
-        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-192.png" sizes="192x192" />
         <link rel="icon" href="https://build-computer.vercel.app/icons/icon-256.png" sizes="256x256" />
         <link rel="icon" href="https://build-computer.vercel.app/icons/icon-512.png" sizes="512x512" />
         <link rel="apple-touch-icon" href="https://build-computer.vercel.app/icons/icon-180.png" />
@@ -142,7 +141,7 @@ return (
         <meta property="og:image:height" content="1024" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:alt" content="Build Computers Premium Logo" />
-        <meta property="og:url" content="https://build-computer.vercel.app/" />
+        <meta property="og:url" content="https://build-computer.vercel.app" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Meta Tags */}
@@ -154,7 +153,7 @@ return (
         <meta name="twitter:image:height" content="1024" />
         <meta name="twitter:image:type" content="image/png" />
         <meta name="twitter:image:alt" content="Build Computers Premium Logo" />
-        <meta name="twitter:url" content="https://build-computer.vercel.app/" />
+        <meta name="twitter:url" content="https://build-computer.vercel.app" />
         <meta name="twitter:type" content="website" />
       </Head>
       <header className="main-header">
@@ -267,6 +266,7 @@ return (
     </div>
   );
 }
+
 
 
 
