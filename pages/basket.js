@@ -159,6 +159,25 @@ export default function Basket() {
       <>
         <Head>
           <title>My Basket - Build Computers</title>
+          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+          <link rel="icon" href="/icons/icon-16.png" sizes="16x16" />
+          <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+          <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
+          <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
+          <link rel="icon" href="/icons/icon-48.png" sizes="48x48" />
+          <link rel="icon" href="/icons/icon-64.png" sizes="64x64" />
+          <link rel="icon" href="/icons/icon-96.png" sizes="96x96" />
+          <link rel="apple-touch-icon" href="/icons/icon-180.png" />
+          <link rel="icon" href="/icons/icon-192.png" sizes="192x192" />
+          <link rel="icon" href="/icons/icon-512.png" sizes="512x512" />
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
+
+          {/* Open Graph Meta Tags for Social Previews */}
+          <meta property="og:title" content="My Basket - Build Computers" />
+          <meta property="og:description" content="View your selected computer components and proceed to checkout." />
+          <meta property="og:image" content="/icons/icon-512.png" />
+          <meta property="og:type" content="website" />
         </Head>
         <BasketHeader />
         <div className="empty-cart">
@@ -174,6 +193,25 @@ export default function Basket() {
     <>
       <Head>
         <title>My Basket - Build Computers</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/icons/icon-16.png" sizes="16x16" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
+        <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
+        <link rel="icon" href="/icons/icon-48.png" sizes="48x48" />
+        <link rel="icon" href="/icons/icon-64.png" sizes="64x64" />
+        <link rel="icon" href="/icons/icon-96.png" sizes="96x96" />
+        <link rel="apple-touch-icon" href="/icons/icon-180.png" />
+        <link rel="icon" href="/icons/icon-192.png" sizes="192x192" />
+        <link rel="icon" href="/icons/icon-512.png" sizes="512x512" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
+
+        {/* Open Graph Meta Tags for Social Previews */}
+        <meta property="og:title" content="My Basket - Build Computers" />
+        <meta property="og:description" content="View your selected computer components and proceed to checkout." />
+        <meta property="og:image" content="/icons/icon-512.png" />
+        <meta property="og:type" content="website" />
       </Head>
       <BasketHeader />
       <main className="basket-page">
@@ -259,3 +297,4 @@ export default function Basket() {
     </>
   );
 }
+
