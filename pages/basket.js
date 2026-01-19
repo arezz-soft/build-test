@@ -157,20 +157,25 @@ export default function Basket() {
   if (cart.length === 0) {
     return (
       <>
-        <Head>
           <title>My Basket - Build Computers</title>
-          <link rel="icon" href="/favicon.ico" sizes="any" />
-          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-          <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
-          <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
-          <link rel="icon" href="/icons/icon-48.png" sizes="48x48" />
-          <link rel="icon" href="/icons/icon-64.png" sizes="64x64" />
-          <link rel="icon" href="/icons/icon-96.png" sizes="96x96" />
-          <link rel="apple-touch-icon" href="/icons/icon-180.png" />
-          <link rel="icon" href="/icons/icon-192.png" sizes="192x192" />
-          <link rel="icon" href="/icons/icon-512.png" sizes="512x512" />
-          <link rel="manifest" href="/manifest.json" />
-          <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
+          <link rel="icon" href="https://build-computer.vercel.app/favicon.ico" sizes="any" />
+          <link rel="icon" href="https://build-computer.vercel.app/favicon.svg" type="image/svg+xml" />
+          <link rel="icon" href="https://build-computer.vercel.app/icons/icon-16.png" sizes="16x16" />
+          <link rel="icon" href="https://build-computer.vercel.app/icons/icon-24.png" sizes="24x24" />
+          <link rel="icon" href="https://build-computer.vercel.app/icons/icon-32.png" sizes="32x32" />
+          <link rel="icon" href="https://build-computer.vercel.app/icons/icon-64.png" sizes="64x64" />
+          <link rel="icon" href="https://build-computer.vercel.app/icons/icon-128.png" sizes="128x128" />
+          <link rel="icon" href="https://build-computer.vercel.app/icons/icon-180.png" sizes="180x180" />
+          <link rel="icon" href="https://build-computer.vercel.app/icons/icon-192.png" sizes="192x192" />
+          <link rel="icon" href="https://build-computer.vercel.app/icons/icon-256.png" sizes="256x256" />
+          <link rel="icon" href="https://build-computer.vercel.app/icons/icon-512.png" sizes="512x512" />
+          <link rel="apple-touch-icon" href="https://build-computer.vercel.app/icons/icon-180.png" />
+          <meta name="msapplication-TileColor" content="#0a0a0c" />
+          <meta name="msapplication-TileImage" content="https://build-computer.vercel.app/icons/icon-512.png" />
+          <meta name="theme-color" content="#0a0a0c" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="manifest" href="https://build-computer.vercel.app/manifest.json" />
+          <meta name="description" content="View your selected computer components and proceed to checkout." />
 
           {/* Open Graph Meta Tags for Social Previews */}
           <meta property="og:site_name" content="Build Computers" />
@@ -180,12 +185,12 @@ export default function Basket() {
           <meta property="og:image:width" content="1024" />
           <meta property="og:image:height" content="1024" />
           <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:alt" content="Build Computers Premium Logo" />
           <meta property="og:url" content="https://build-computer.vercel.app/basket" />
           <meta property="og:type" content="website" />
 
           {/* Twitter Meta Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@buildcomputer" />
           <meta name="twitter:title" content="My Basket - Build Computers" />
           <meta name="twitter:description" content="View your selected computer components and proceed to checkout." />
           <meta name="twitter:image" content="https://build-computer.vercel.app/icons/og-image.png" />
@@ -195,7 +200,6 @@ export default function Basket() {
           <meta name="twitter:image:alt" content="Build Computers Premium Logo" />
           <meta name="twitter:url" content="https://build-computer.vercel.app/basket" />
           <meta name="twitter:type" content="website" />
-
         </Head>
         <BasketHeader />
         <div className="empty-cart">
@@ -211,19 +215,24 @@ export default function Basket() {
     <>
       <Head>
         <title>My Basket - Build Computers</title>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/icons/icon-24.png" sizes="24x24" />
-        <link rel="icon" href="/icons/icon-32.png" sizes="32x32" />
-        <link rel="icon" href="/icons/icon-48.png" sizes="48x48" />
-        <link rel="icon" href="/icons/icon-64.png" sizes="64x64" />
-        <link rel="icon" href="/icons/icon-96.png" sizes="96x96" />
-        <link rel="apple-touch-icon" href="/icons/icon-180.png" />
-        <link rel="icon" href="/icons/icon-192.png" sizes="192x192" />
-        <link rel="icon" href="/icons/icon-512.png" sizes="512x512" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
-
+        <link rel="icon" href="https://build-computer.vercel.app/favicon.ico" sizes="any" />
+        <link rel="icon" href="https://build-computer.vercel.app/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-16.png" sizes="16x16" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-24.png" sizes="24x24" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-32.png" sizes="32x32" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-64.png" sizes="64x64" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-128.png" sizes="128x128" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-180.png" sizes="180x180" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-192.png" sizes="192x192" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-256.png" sizes="256x256" />
+        <link rel="icon" href="https://build-computer.vercel.app/icons/icon-512.png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="https://build-computer.vercel.app/icons/icon-180.png" />
+        <meta name="msapplication-TileColor" content="#0a0a0c" />
+        <meta name="msapplication-TileImage" content="https://build-computer.vercel.app/icons/icon-512.png" />
+        <meta name="theme-color" content="#0a0a0c" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="https://build-computer.vercel.app/manifest.json" />
+        <meta name="description" content="View your selected computer components and proceed to checkout." />
 
         {/* Open Graph Meta Tags for Social Previews */}
         <meta property="og:site_name" content="Build Computers" />
@@ -233,12 +242,12 @@ export default function Basket() {
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
         <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Build Computers Premium Logo" />
         <meta property="og:url" content="https://build-computer.vercel.app/basket" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@buildcomputer" />
         <meta name="twitter:title" content="My Basket - Build Computers" />
         <meta name="twitter:description" content="View your selected computer components and proceed to checkout." />
         <meta name="twitter:image" content="https://build-computer.vercel.app/icons/og-image.png" />
@@ -248,7 +257,6 @@ export default function Basket() {
         <meta name="twitter:image:alt" content="Build Computers Premium Logo" />
         <meta name="twitter:url" content="https://build-computer.vercel.app/basket" />
         <meta name="twitter:type" content="website" />
-
       </Head>
       <BasketHeader />
       <main className="basket-page">
@@ -334,6 +342,7 @@ export default function Basket() {
     </>
   );
 }
+
 
 
 
