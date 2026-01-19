@@ -129,17 +129,17 @@ return (
         <meta name="msapplication-TileImage" content="/icons/icon-512.png" />
 
         {/* Open Graph Meta Tags for Social Previews */}
-        <meta property="og:title" content="Build~Computers" />
-        <meta property="og:description" content="Choose the best components and create your perfect setup. Created by Arez & Hasty." />
-        <meta property="og:image" content="/icons/icon-512.png" />
+        <meta property="og:title" content="Build~Computers - Build Your Dream PC" />
+        <meta property="og:description" content="Choose the best components and create your perfect setup. Premium computer builds, laptops, and supplies." />
+        <meta property="og:image" content="https://build-computer.vercel.app/icons/icon-512.png" />
         <meta property="og:url" content="https://build-computer.vercel.app/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Build~Computers" />
+        <meta name="twitter:title" content="Build~Computers - Build Your Dream PC" />
         <meta name="twitter:description" content="Choose the best components and create your perfect setup." />
-        <meta name="twitter:image" content="/icons/icon-512.png" />
+        <meta name="twitter:image" content="https://build-computer.vercel.app/icons/icon-512.png" />
       </Head>
 
 
@@ -253,4 +253,5 @@ return (
     </div>
   );
 }
+
 
