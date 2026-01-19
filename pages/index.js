@@ -144,6 +144,12 @@ return (
         <meta name="twitter:title" content="Build~Computers - Build Your Dream PC" />
         <meta name="twitter:description" content="Choose the best components and create your perfect setup." />
         <meta name="twitter:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+        <meta name="twitter:image:width" content="1024" />
+        <meta name="twitter:image:height" content="1024" />
+        <meta name="twitter:image:type" content="image/png" />
+        <meta name="twitter:image:alt" content="Build Computers Premium Logo" />
+        <meta name="twitter:url" content="https://build-computer.vercel.app/" />
+        <meta name="twitter:type" content="website" />
       </Head>
       <header className="main-header">
         <div className="header-logo" onClick={() => router.push('/')}>
@@ -255,6 +261,7 @@ return (
     </div>
   );
 }
+
 
 
 
