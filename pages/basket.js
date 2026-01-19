@@ -183,6 +183,7 @@ export default function Basket() {
           <meta property="og:title" content="My Basket - Build Computers" />
           <meta property="og:description" content="View your selected computer components and proceed to checkout." />
           <meta property="og:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+          <meta property="og:image:secure_url" content="https://build-computer.vercel.app/icons/og-image.png" />
           <meta property="og:image:width" content="1024" />
           <meta property="og:image:height" content="1024" />
           <meta property="og:image:type" content="image/png" />
@@ -235,11 +236,13 @@ export default function Basket() {
         <link rel="manifest" href="https://build-computer.vercel.app/manifest.json" />
         <meta name="description" content="View your selected computer components and proceed to checkout." />
 
+
         {/* Open Graph Meta Tags for Social Previews */}
         <meta property="og:site_name" content="Build Computers" />
         <meta property="og:title" content="My Basket - Build Computers" />
         <meta property="og:description" content="View your selected computer components and proceed to checkout." />
         <meta property="og:image" content="https://build-computer.vercel.app/icons/og-image.png" />
+        <meta property="og:image:secure_url" content="https://build-computer.vercel.app/icons/og-image.png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
         <meta property="og:image:type" content="image/png" />
@@ -343,6 +346,7 @@ export default function Basket() {
     </>
   );
 }
+
 
 
 
